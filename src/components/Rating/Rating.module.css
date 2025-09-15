@@ -1,0 +1,33 @@
+.ratingContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.ratingContainer input {
+  display: none;
+}
+
+.ratingContainer label {
+  cursor: pointer;
+  font-size: 25px;
+  color: var(--color-border);
+  transition: var(--transition);
+  margin-right: 5px;
+}
+
+.ratingContainer label:hover,
+.ratingContainer label:hover ~ label,
+.ratingContainer input:checked ~ label {
+  color: var(--warning-color);
+}
+
+.displayRating {
+  color: var(--warning-color);
+  font-size: 1.2rem;
+}
+
+.noRating {
+  color: var(--color-muted-foreground);
+  font-size: 0.9rem;
+}

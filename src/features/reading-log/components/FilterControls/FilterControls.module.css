@@ -1,0 +1,42 @@
+.filterControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  flex: 1;
+  min-width: 250px;
+}
+
+.searchButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.filterContainer,
+.sortContainer {
+  min-width: 200px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--color-foreground);
+}
+
+@media (max-width: 768px) {
+  .filterControls {
+    flex-direction: column;
+  }
+
+  .searchContainer,
+  .filterContainer,
+  .sortContainer {
+    width: 100%;
+    min-width: unset;
+  }
+}

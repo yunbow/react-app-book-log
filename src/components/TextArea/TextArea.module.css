@@ -1,0 +1,22 @@
+.textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-ring);
+  box-shadow: 0 0 0 2px oklch(0.6818 0.1584 243.3540 / 0.2);
+}
+
+.textarea:disabled {
+  background-color: var(--color-background);
+  cursor: not-allowed;
+}

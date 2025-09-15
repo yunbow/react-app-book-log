@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: oklch(0.6223 0.1506 244.9955);
+  transform: translateY(-2px);
+}
+
+.btn:disabled {
+  background-color: var(--color-border);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.danger {
+  background-color: var(--color-destructive);
+}
+
+.danger:hover {
+  background-color: oklch(0.5688 0.2276 25.7658);
+}
+
+.secondary {
+  background-color: var(--color-accent);
+  color: var(--color-foreground);
+}
+
+.secondary:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
